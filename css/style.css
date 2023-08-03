@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .italic {
     font-style: italic;
 }
@@ -181,4 +185,40 @@ form button{
     border-radius: 12px;
     background-color: #edf0f4;
     margin-bottom: 20px;
+}
+
+.title-container {
+    background-color: #edf0f4;
+    padding: 45px 0;
+    margin: 30px 0;
+}
+
+.title-container > h1 {
+    text-align: center;
+}
+
+.destinations, .favourites {
+    display: flex;
+    gap: 20px;
+}
+
+.destination, .favourite {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.destinations {
+    margin-bottom: 40px;
+}
+
+.ikon {
+    background-color: #edf0f4;
+    padding: 6px;
+    border-radius: 100%;
+}
+
+.ikon img {
+    width: 20px;
+    height: 20px;
 }
