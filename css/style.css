@@ -1,0 +1,184 @@
+/* css reset */
+* { 
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.grey {
+    color: grey;
+}
+
+.fsize-12 {
+    font-size: 12px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px grey;
+    align-items: center;
+    /* padding: atas kanan bawah kiri; */
+    padding: 20px 0 20px 40px;
+}
+
+.navbar {
+    display: flex;
+    border: solid 1px black;
+    justify-content: space-around;
+    border-radius: 8px;
+}
+
+li .border {
+    border-right: solid 1px;
+    border-left: solid 1px;
+}
+
+.navbar li a {
+    color: black;
+    text-align: center;
+}
+
+.navbar li a p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul li {
+    width: 100px;
+}
+
+.home {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.home-title {
+    text-align: center;
+    /* padding: atas-bawah kiri-kanan; */
+    padding: 15px 0;
+}
+.home-quote{
+    font-weight: lighter;
+    text-align: center;
+}
+
+.home-content {
+    display: flex;
+    gap: 20px;
+}
+
+.home-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-left > img {
+    border-radius: 8px;
+}
+
+.description {
+    padding: 20px;
+}
+
+.person {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.person img {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.home-right {
+    width: 40%;
+    height: fit-content;
+    background-color: #edf0f4;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-right > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-right > p {
+    padding-bottom: 40px;
+}
+
+.home-content{
+    padding-top: 15px;
+}
+
+form label {
+    font-size :15px;
+    padding-top: 10px;
+}
+
+form input, form select {
+    font-size: 12px;
+    height: 35px;
+}
+
+form button{
+    all: unset;
+    background-color: #29323d;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.feature{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    background-color: #edf0f4;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.number p {
+    width: 50px;
+    text-align: center;
+}
+
+.stopbar {
+    width: 50%;
+    height: 4px;
+    align-self: center;
+    border-radius: 12px;
+    background-color: #edf0f4;
+    margin-bottom: 20px;
+}
