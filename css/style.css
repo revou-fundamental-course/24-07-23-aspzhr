@@ -141,7 +141,7 @@ form input, form select {
     height: 35px;
 }
 
-form button{
+form button, button{
     all: unset;
     background-color: #29323d;
     text-align: center;
@@ -221,4 +221,27 @@ form button{
 .ikon img {
     width: 20px;
     height: 20px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer h1 {
+    margin-bottom: 35px;
+}
+
+.footer button {
+    margin-top: 35px;
+    width: 300px;
+    margin-bottom: 35px;
+}
+
+.footer p, .footer a {
+    color: grey;
 }

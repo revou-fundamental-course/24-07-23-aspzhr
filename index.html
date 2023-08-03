@@ -10,12 +10,12 @@
     <div class="topnav">
         <h1 class="title">moqups</h1>
         <ul class="navbar">
-            <li><a href=""><p>Home</p></a></li>
+            <li><a href="#home"><p>Home</p></a></li>
             <li><a href="#package" ><p class="border">Our Package</p></a></li>
-            <li><a href=""><p>Call Us</p></a></li>
+            <li><a href="#footer"><p>Call Us</p></a></li>
         </ul>
     </div>
-    <div class="home">
+    <div class="home" id="home">
         <h1 class="home-title">Your Trusted Travel Agent's</h1>
         <h2 class="home-quote">Your happiness is our hapiness</h2>
         <div class="home-content">
@@ -51,18 +51,19 @@
             <div class="home-right">
                 <h3>Contact Us</h3>
                 <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
-                <form action="">
+                <form name="contactForm" onsubmit="validateForm()">
                     <label for="fname">Your Name:</label>
                     <input type="text" id="fname" name="fname" placeholder="First and last name">
                     <label for="femail">Email Address:</label>
                     <input type="email" id="femail" name="femail" placeholder=" example@email.com">              
                     <label for="finterest">What are you interested in?</label>
                     <select name="finterest" id="interest">
+                        <option disabled selected value> -- select an option --</option>
                         <option value="profesional">Profesional</option>
                         <option value="komersial">Komersial</option>
                         <option value="fisik">Kegiatan Fisik</option>
                     </select>
-                    <button>SEND</button>
+                    <button type="submit">SEND</button>
                 </form>
             </div>
         </div>
@@ -79,7 +80,7 @@
                 </div>
                 <div>
                     <p class="bold">Bali</p>
-                    <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
                 </div>
             </div>
             <div class="destination">
@@ -87,8 +88,8 @@
                     <img src="src/lightbulb.svg" alt="lampu">
                 </div>
                 <div>
-                    <p class="bold">Bali</p>
-                    <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    <p class="bold">Japan</p>
+                    <p>Travel dan wisata di Japan.Japan adalah negara yang kaya akan kebudayaan dan destinasi wisata menarik.</p>
                 </div>
             </div>
             <div class="destination">
@@ -96,8 +97,8 @@
                     <img src="src/lightbulb.svg" alt="lampu">
                 </div>
                 <div>
-                    <p class="bold">Bali</p>
-                    <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    <p class="bold">Singapore</p>
+                    <p>Singapore adalah negara kota yang mengagumkan dengan berbagai daya tarik wisata.</p>
                 </div>
             </div>
         </div>
@@ -107,8 +108,8 @@
                     <img src="src/star.svg" alt="lampu">
                 </div>
                 <div>
-                    <p class="bold">Bali</p>
-                    <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    <p class="bold">Bandung</p>
+                    <p>Travel dan wisata di Bandung. Bandung adalah kota yang menawarkan pesona alam dan budaya yang khas.</p>
                 </div>
             </div>
             <div class="favourite">
@@ -116,8 +117,8 @@
                     <img src="src/star.svg" alt="lampu">
                 </div>
                 <div>
-                    <p class="bold">Bali</p>
-                    <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    <p class="bold">Surabaya</p>
+                    <p>Travel dan wisata di Surabaya. Surabaya adalah kota metropolitan yang menawarkan berbagai tempat menarik untuk dikunjungi.</p>
                 </div>
             </div>
             <div class="favourite">
@@ -125,12 +126,25 @@
                     <img src="src/star.svg" alt="lampu">
                 </div>
                 <div>
-                    <p class="bold">Bali</p>
-                    <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    <p class="bold">Lampung</p>
+                    <p>Travel dan wisata di Lampung. Lampung adalah provinsi yang menawarkan pesona alam dan budaya yang khas.</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="footer" id="footer">
+        <h1>Your Closing Argument Headline</h1>
+        <p>Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla,</p>
+        <button>CALL TO ACTION</button>
+        <p>moqups</p>
+        <div class="tos">
+            <a href="">Terms of Service</a>
+            <a href="">Privacy Policy</a>
+        </div>
+        <p>©2019 Moqups</p>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
